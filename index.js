@@ -30,7 +30,7 @@ app.use("/api/users", usersRoute);
 app.use("/api/rooms", roomsRoute);
 app.use("/api/hotels", hotelsRoute);
 
-// app.listen(8800, () => {
-//   connect();
-//   console.log("connect to backend server!");
-// });
+app.listen(process.env.PORT || 8800, () => {
+  connect();
+  console.log("connect to backend server!");
+});
